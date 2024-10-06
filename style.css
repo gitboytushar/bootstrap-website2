@@ -1,5 +1,5 @@
 * {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 :root {
@@ -54,8 +54,64 @@
     margin-top: 70px;
 }
 
+#testimonial-container {
+    width: 100%;
+}
+
+.carousel-item {
+    min-height: 350px;
+    position: relative;
+}
+
+.carousal-img img {
+    position: relative;
+    left: 50%;
+    top: 60px;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 120px;
+    border: 1.5px solid rgba(165, 139, 139, 0.483);
+    border-radius: 200px;
+    padding: 7px;
+}
+
+.pagination-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.pagination-button img {
+    width: 50px;
+}
+
+.carousal-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/* -------- responsive codes ---------- */
+
 @media screen and (max-width: 430px) {
     .feature-info {
         margin-top: 50px;
     }
+
+    .carousel-item {
+        min-height: 500px;
+    }
+
+    .carousal-img img {
+        position: absolute;
+        left: 50%;
+        top: 25%;
+    }
+
+    .pagination-button img {
+        width: 30px;
+    }
+
+
 }
