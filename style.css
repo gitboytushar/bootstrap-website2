@@ -121,6 +121,30 @@
     background: linear-gradient(135deg, var(--footer-color1), var(--footer-color2), var(--footer-color3)) !important;
 }
 
+/* ------ adding simple animations to some elements ---------  */
+
+@keyframes entry-view {
+    from {
+        opacity: 0;
+        transform: scale(1.1);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.show {
+    animation: entry-view 0.5s linear forwards;
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
 /* -------- responsive codes ---------- */
 
 @media screen and (max-width: 430px) {
