@@ -1,11 +1,15 @@
-* {
-    /* outline: 1px solid red; */
-}
+/* * {
+    outline: 1px solid red;
+} */
 
 :root {
     --primary-color: #6610f2;
     --secondary-color: #FB876E;
     --person-name-color: #198754;
+
+    --footer-color1: #8E63FE;
+    --footer-color2: #5620EB;
+    --footer-color3: #3E00E3;
 
     --base-color: #fff;
 
@@ -72,7 +76,7 @@
 .carousal-img img {
     position: relative;
     left: 50%;
-    top: 60px;
+    top: 90px;
     transform: translate(-50%, -50%);
     width: 120px;
     height: 120px;
@@ -109,6 +113,13 @@
     width: fit-content;
 }
 
+#bottom-footer {
+    height: fit-content;
+}
+
+.bg-gradient {
+    background: linear-gradient(135deg, var(--footer-color1), var(--footer-color2), var(--footer-color3)) !important;
+}
 
 /* -------- responsive codes ---------- */
 
@@ -130,5 +141,4 @@
     .pagination-button img {
         width: 30px;
     }
-
 }
