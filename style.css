@@ -1,0 +1,61 @@
+* {
+    outline: 1px solid red;
+}
+
+:root {
+    --primary-color: #6610f2;
+    --secondary-color: #FB876E;
+    --person-name-color: #198754;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--primary-color);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    opacity: 0.8;
+}
+
+#brand-name {
+    color: var(--primary-color);
+}
+
+#brand-name:hover {
+    opacity: 0.8;
+}
+
+.heading {
+    color: var(--primary-color);
+}
+
+.highlight {
+    color: var(--secondary-color);
+}
+
+#btn-primary {
+    color: white;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transition: opacity 0.2s ease-in;
+}
+
+#btn-primary:hover {
+    opacity: .8;
+}
+
+#btn-secondary {
+    color: var(--primary-color);
+    background-color: transparent;
+    border-color: var(--primary-color);
+    transition: all 0.2s ease-in;
+}
+
+.feature-info {
+    margin-top: 70px;
+}
+
+@media screen and (max-width: 430px) {
+    .feature-info {
+        margin-top: 50px;
+    }
+}
